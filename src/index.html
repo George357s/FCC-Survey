@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FCC Survey</title>
+</head>
+<body>
+
+   <div class="container">
+      <header>
+         <h1 id="title" class="text-center">
+            Employee of the Year Vacation
+         </h1>
+         <p id="description" class="desc-text-center">
+            Help us decide what kind of vacation you would like!
+         </p>
+      </header>
+      <form id="survey-form">
+         <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+            />
+         </div>
+         <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input 
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+            />
+         </div>
+         <div class="form-group">
+            <label for="number" id="number-label">Age <span class="clue">(optional)</span></label>
+            <input 
+            type="number"
+            name="age"
+            id="number"
+            min="17"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+            />
+         </div>
+         <div class="form-group">
+            <P>Which climate would you prefer?</P>
+            <select name="climate" id="dropdown" class="form-control" required>
+               <option disabled selected value>Select Your Preferred Climate</option>
+               <option value="tropical">Tropical</option>
+               <option value="dry">Dry</option>
+               <option value="temperate">Temperate</option>
+               <option value="polar">Polar</option>
+               <option value="tundra">Tundra</option>
+            </select>
+         </div>
+         <div class="form-group">
+            <p>
+               What type of vacation would you fancy?
+            </p>
+            <label>
+               <input
+                 name="user-recommend"
+                 value="inclusive-stay"
+                 type="radio"
+                 class="input-radio"
+                 checked
+               />Inclusive Stay</label
+             >
+             <label>
+               <input
+                 name="user-recommend"
+                 value="cruise"
+                 type="radio"
+                 class="input-radio"
+               />Cruise</label
+             >
+       
+             <label
+               ><input
+                 name="user-recommend"
+                 value="cash-bonus"
+                 type="radio"
+                 class="input-radio"
+               />Cash Bonus</label
+             >
+         </div>
+
+         <div class="form-group">
+            <p>
+              What are your favorite region types?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="desert">Desert</option>
+              <option value="tundra">Tundra</option>
+              <option value="forest">Forest</option>
+              <option value="grassland">Grassland</option>
+            </select>
+          </div>
+
+         <div class="form-group">
+            <p>
+               Do you prefer to stay National or go Inter-National?
+                <span class="clue">(Check all that apply)</span>
+            </p>
+
+            <label>
+               <input 
+               type="checkbox"
+               name="prefer"
+               value="National"
+               class="input-checkbox">
+               National
+            </label>
+            <label>
+               <input 
+               type="checkbox"
+               name="prefer"
+               value="inter-national"
+               class="input-checkbox">
+               Inter-National
+            </label>
+         </div>
+         <div class="form-group">
+            <p>
+               Any Comments or suggestions?
+            </p>
+            <textarea 
+            name="comment"
+            id="comments"
+            cols="30" rows="10"
+            class="text-area"
+            placeholder="Enter your comment here..."
+         ></textarea>
+         </div>
+
+         <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+               Submit
+            </button>
+         </div>
+      </form>
+   </div>
+
+
+</body>
+</html>
