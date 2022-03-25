@@ -6,7 +6,7 @@ Change log :
       Added barebones Html code.
       Survey Questions added
       basic layout class and ids set
-      /
+     
    FCC-Sruvey V1.1
     3/24/2021
       Added CSS
@@ -15,4 +15,4 @@ Change log :
       Form Element now has a blue border box around it giving it a ncie look
       Added margin and padding to the form elements under the form-control class for spacing and positioning
       
-      /
+   
